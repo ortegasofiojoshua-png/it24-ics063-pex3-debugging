@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: white;
+    background: linear-gradient(135deg, #061b43, #174b9b);
+}
+
+.container{
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    text-align: center;
+    background: #071a3d;
+    border-top: 8px solid #e0b321;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+h1{
+    color: #e0b321;
+    font-size: 18px;
+}
+
+h2{
+    font-size: 28px;
+}
+
+p{
+    line-height: 1.6;
+}
+
+.counter-box{
+    margin: 25px 0;
+    padding: 25px;
+    background: #102c5c;
+    border-radius: 10px;
+}
+
+.counter-box h3 {
+    margin: 0;
+    color: #d9e4f6;
+}
+
+#countOutput {
+    display: block;
+    font-size: 64px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+button{
+    padding: 13px 25px;
+    border: none;
+    border-radius: 6px;
+    background: #e0b321;
+    color: #061b43;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+#resetBtn {
+    background: white;
+}
+
+#statusMessage {
+    margin-top: 20px;
+}
+
+@media (max-width: 480px){
+    .container {
+        padding: 20px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
